@@ -1,5 +1,3 @@
-
-
 body{
   width: 100vw;  
   height: 100vh;
@@ -36,4 +34,52 @@ header{
                 color: white;
             }
         
+}
+
+main{
+width: 100vw;
+height: 90%;
+
+        & .section1{
+            width: 100%;
+            height: 100%;
+            background-image: url(../img/textura-da-parede-do-grunge\ 1.png);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            
+        } .section1 h2{
+            font-size: 35px;
+        } .section1 p{
+            font-size: 25px;
+            
+        }
+        .section1-mudancaDeCor{
+            color: #00C2FF;
+        } .section1-imagens{
+            display: flex;
+            justify-content: center;
+            margin: 0px 0px 30px;
+            align-items: center;
+            font-size: 100px;
+            gap:50px;
+        } .participe{
+            border: 2px solid #00AAE0;
+            border-radius: 10px;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            padding: 20px 40px; 
+            margin: 18px auto;
+        } .participe a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 21px;
+        } .participe:hover{
+            background-color: #00C2FF;
+            transition: 1s;
+        } .imagem-paq{
+            margin: 0px auto;
+        }
 }
