@@ -1,0 +1,48 @@
+
+
+body{
+  width: 100vw;  
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+header{
+    display: block;
+}
+.itens{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #1FB2E0, #1A48A5);
+
+
+ }
+ .itens-topicos {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1.4em;
+} 
+
+.itens-topicos-ancora{
+    border: 0px solid black;
+    padding: 0.7em;
+    border-radius: 2px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    
+            
+} 
+.itens-topicos-ancora:hover{
+    background-color: #000;
+    border-radius: 7px;
+    transition: 1000ms;
+    color: white;
+}
+        
+.section-1{
+    display: flex;
+    justify-content: space-between;
+}
