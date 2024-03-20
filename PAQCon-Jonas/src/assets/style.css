@@ -1,0 +1,110 @@
+body{
+  width: 100vw;  
+  height: 100vh;
+}
+header{
+    display: block;
+}
+.itens{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+
+            & .itens-PaqCon{
+                width: 50%;
+                text-align: center;
+            } .itens-PaqCon h2{
+                color: brown;
+                font-size: 2.4em;
+            }.itens-topicos {
+                width: 50%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin: 1.4em;
+            } .itens-topicos-ancora{
+                border: 0px solid black;
+                padding: 0.7em;
+                border-radius: 2px;
+                color: gray;
+                text-decoration: none;
+            } .itens-topicos-ancora:focus{
+                background-color: brown;
+                color: white;
+            }
+        
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    
+        & .section1{
+            width: 100%;
+            height: 100%;
+            background-image: url(../img/textura-da-parede-do-grunge\ 1.png);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            position: absolute;
+            
+        } .section1 h2{
+            font-size: 35px;
+        } .section1 p{
+            font-size: 25px;
+            
+        }
+        .section1-mudancaDeCor-rosa{
+            color: #FF00F5;
+        }
+        .section1-mudancaDeCor-azul{
+            color: #00C2FF;
+        } .section1-imagens{
+            display: flex;
+            justify-content: center;
+            margin: 0px 0px 30px;
+            align-items: center;
+            font-size: 100px;
+            gap:50px;
+        } .participe{
+            border: 2px solid #FF00F5;
+            background-color: rgba(255, 0, 255, 0.1);
+            border-radius: 10px;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            padding: 20px 40px; 
+            margin: 18px auto;
+        } .participe a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 21px;
+        } .participe:hover{
+            background-color: #FF00F5;
+            transition: 1.3s;
+        } .imagem-paq{
+            margin: 0 auto;
+            width: 190px;
+            
+        } .fundo-logopaq{
+            background-image: url(../img/Vector-18.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 150px;
+            background-position-y: 20px;
+        }
+        .localizacao-evento{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+        }
+        .informacoes-local-evento{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+}
