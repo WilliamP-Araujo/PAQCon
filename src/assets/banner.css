@@ -1,0 +1,85 @@
+body{
+  width: 100vw;  
+  height: 100vh;
+}
+header{
+    display: block;
+}
+.itens{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+
+            & .itens-PaqCon{
+                width: 50%;
+                text-align: center;
+            } .itens-PaqCon h2{
+                color: brown;
+                font-size: 2.4em;
+            }.itens-topicos {
+                width: 50%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin: 1.4em;
+            } .itens-topicos-ancora{
+                border: 0px solid black;
+                padding: 0.7em;
+                border-radius: 2px;
+                color: gray;
+                text-decoration: none;
+            } .itens-topicos-ancora:focus{
+                background-color: brown;
+                color: white;
+            }
+        
+}
+
+main{
+width: 100vw;
+height: 90%;
+
+        & .section1{
+            width: 100%;
+            height: 100%;
+            background-image: url(../img/textura-da-parede-do-grunge\ 1.png);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            
+        } .section1 h2{
+            font-size: 35px;
+        } .section1 p{
+            font-size: 25px;
+            
+        }
+        .section1-mudancaDeCor{
+            color: #00C2FF;
+        } .section1-imagens{
+            display: flex;
+            justify-content: center;
+            margin: 0px 0px 30px;
+            align-items: center;
+            font-size: 100px;
+            gap:50px;
+        } .participe{
+            border: 2px solid #00AAE0;
+            border-radius: 10px;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            padding: 20px 40px; 
+            margin: 18px auto;
+        } .participe a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 21px;
+        } .participe:hover{
+            background-color: #00C2FF;
+            transition: 1s;
+        } .imagem-paq{
+            margin: 0px auto;
+        }
+}
