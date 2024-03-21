@@ -33,7 +33,11 @@
     width: 100%;
 }
 .cartao{
+<<<<<<< HEAD
     width: calc((100% - 120px) / 5); /* Ajuste a largura dos cartões */
+=======
+    width: calc((100% - 50px) / 5); /* Ajuste a largura dos cartões */
+>>>>>>> b46ed0804318a09ef473c7bdac4586851140c819
     max-width: 350px;
     max-height: 460px; /* Remova o limite máximo de largura */
     flex: 0 0 auto; /* Evite que os cartões encolham */
