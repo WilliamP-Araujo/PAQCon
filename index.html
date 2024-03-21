@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="src/assets/cabecalho.css">
     <link rel="stylesheet" href="src/assets/cronometro.css">
     <link rel="stylesheet" href="src/assets/rodape.css">
+    <link rel="stylesheet" href="src/assets/hamburguer.css">
 
 
     <!-- Swipe Css -->
@@ -19,8 +20,20 @@
 
 <body>
     <header>
-        <nav class="itens">
+        <nav class="itens-cabecalho">
             <ul class="itens-topicos">
+                <li><a href="#" class="itens-topicos-ancora">Inicio</a></li>
+                <li><a href="#" class="itens-topicos-ancora">Programação</a></li>
+                <li><a href="#" class="itens-topicos-ancora">Local</a></li>
+                <li><a href="#" class="itens-topicos-ancora">Workshops</a></li>
+                <li><a href="#Convidados" class="itens-topicos-ancora">Convidados</a></li>
+            </ul>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="src/img/cardapio.png" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
                 <li><a href="#" class="itens-topicos-ancora">Inicio</a></li>
                 <li><a href="#" class="itens-topicos-ancora">Programação</a></li>
                 <li><a href="#" class="itens-topicos-ancora">Local</a></li>
@@ -34,20 +47,24 @@
         <section class="section1">
             <img src="src/img/logo paq.png" alt="Logo do PAQ" class="imagem-paq">
             <div class="section1-imagens">
-                <img src="src/img/forma-abstrata (1) 1.png" alt="Seta apontando para a logo do PAQ" width="152px">
-                <h1><span class="section1-mudancaDeCor">PAQ</span>CON</h1>
-                <img src="src/img/forma-abstrata (1) 2.png" alt="Seta apontando para a logo do PAQ" width="152px">
+                <img src="src/img/Group 2243.png" alt="imagem" class="PAQconGrafitada">
             </div>
-            <h2><span class="section1-mudancaDeCor">03</span> e <span class="section1-mudancaDeCor">04</span> de abril
-            </h2>
-            <p>Centro Sul | Florianópolis</p>
-            <p class="participe"><a href="#" target="_blank" rel="external">Participe</a></p>
+            <div class="informacoes-section1">
+                <h2><span class="section1-mudancaDeCor">03</span> e <span class="section1-mudancaDeCor">04</span> de
+                    abril</h2>
+                <div class="localizacao-evento">
+                    <img src="src/img/localização.png" alt="" width="20px">
+                    <p>Centro Sul | Florianópolis</p>
+                    </div>
+                    <p class="participe"><a href="https://www.sympla.com.br/evento/paqcon-2024/2388532" target="_blank" rel="external">Inscreva-se aqui</a></p>
+                </div>
+            </div>
         </section>
 
         <section class="section-2">
-                <h2 class="texto-data-paqcon">A PaqCon vai rolar nos dias 03 e 04 de Abril no Centro Sul, na cidade de
-                    Florianópolis/SC</h2>
-                <h2 class="texto-data-paqcon2"><Strong>Evento acontecerá em</Strong></h2>
+            <h2 class="texto-data-paqcon">A PaqCon vai rolar nos dias 03 e 04 de Abril no Centro Sul, na cidade de
+                Florianópolis/SC</h2>
+            <h2 class="texto-data-paqcon2"><Strong>Evento acontecerá em</Strong></h2>
             <ul class="timer">
                 <li>
                     <div class="bloco-cronometro">
@@ -74,7 +91,7 @@
                     </div>
                 </li>
             </ul>
-            <button class="botao-agenda">Adicionar a agenda</button>
+            <button class="botao-agenda"><a class="link-agenda" href="https://calendar.google.com/calendar/r/eventedit?text=PAQcon&location=Av.+Gov.+Gustavo+Richard%2C+850+-+Centro%2C+Florianópolis+-+SC%2C+88010-290&dates=20240403T133000Z/20240404T133000Z" target="_blank" rel="external">Adicionar a agenda</button>
         </section>
 
         <section class="section-4" id="Convidados">
@@ -183,19 +200,34 @@
                     </div>
                 </div>
 
+
+            </div>
+        </section>
+        <section class="section-6">
+            <div class="rodape-texto">
+                <h2>Para mais atualizações do evento nos siga no instagram</h2>
+                <p>Dentro do instagram vamos estar fazendo uma grande cobertura do evento e você está super convidado a
+                    nos acompanhar!!</p>
+                <button><img src="src/img/Instagram.svg" alt="instagram">Siga-nos instagram</button>
             </div>
         </section>
         <footer>
-            <div class="rodape-texto">
-                <h2>Para mais atulizações do evento nos siga no instagram</h2>
-                <p>Dentro do instagram vamos estar fazendo uma grande cobertura do evento e você está super convidado a nos acompanhar!!</p>
-                <button><img src="src/img/Instagram.svg" alt="instagram">Siga-nos instagram</button>
+            <div class="rodape-icones">
+                <img class="item" src="src/img/paquito-removebg-preview (1) 3.png">
+                <span class="item">2024 © Política de Privacidade</span>
+                <div class="item">
+                    <nav class="rodape-links">
+                        <a href="https://prototipandoaquebrada.org/#topo" target="_blank" rel="external"><img src="src/img/imagemlegal.svg"></a>
+                        <a href=""><img src="src/img/instagramrodape.svg"></a>
+                        <a href="https://www.linkedin.com/company/prototipando-a-quebrada/" target="_blank" rel="external"><img src="src/img/linkedin.svg"></a>
+                    </nav>
+                </div>
             </div>
-            
         </footer>
     </main>
     <script src="src/js/script.js"></script>
     <script src="src/js/cronometro.js"></script>
+    <script src="src/js/hamburguer.js"></script>
 
 </body>
 <!-- Swipe Css -->

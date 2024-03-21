@@ -1,0 +1,39 @@
+@media screen and (max-width: 768px) {
+
+    header{
+        height: 40px;
+    }
+    .itens-cabecalho{
+        padding: 1rem 4rem;
+    }
+    .itens-topicos{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        color: yellow;
+        display: block;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .open {
+        display: block;
+    }
+}

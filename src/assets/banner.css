@@ -1,85 +1,99 @@
-body{
-  width: 100vw;  
-  height: 100vh;
-}
-header{
-    display: block;
-}
-.itens{
-    width: 100vw;
-    height: 10vh;
-    display: flex;
-    justify-content: space-around;
-
-            & .itens-PaqCon{
-                width: 50%;
-                text-align: center;
-            } .itens-PaqCon h2{
-                color: brown;
-                font-size: 2.4em;
-            }.itens-topicos {
-                width: 50%;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                margin: 1.4em;
-            } .itens-topicos-ancora{
-                border: 0px solid black;
-                padding: 0.7em;
-                border-radius: 2px;
-                color: gray;
-                text-decoration: none;
-            } .itens-topicos-ancora:focus{
-                background-color: brown;
-                color: white;
-            }
-        
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.section1, header {
+    background-image: url(../img/bannerLegal.jpg); /* Caminho para sua imagem de fundo */
+    background-size: cover; /* Ajuste a imagem de fundo para cobrir todo o elemento */
+    background-position: center;
+    padding: auto; /* Centralize a imagem de fundo */ /* Adicione preenchimento se desejar */
+    margin: 0; /* Certifique-se de que não haja margem */
 }
 
 main{
-width: 100vw;
-height: 90%;
+    width: 100vw;
+    height: 100vh;
+}
+.section1{
+    width: 100%;
+    height: 100%;
+    min-height: 90vh ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-        & .section1{
-            width: 100%;
-            height: 100%;
-            background-image: url(../img/textura-da-parede-do-grunge\ 1.png);
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            
-        } .section1 h2{
-            font-size: 35px;
-        } .section1 p{
-            font-size: 25px;
-            
-        }
-        .section1-mudancaDeCor{
-            color: #00C2FF;
-        } .section1-imagens{
-            display: flex;
-            justify-content: center;
-            margin: 0px 0px 30px;
-            align-items: center;
-            font-size: 100px;
-            gap:50px;
-        } .participe{
-            border: 2px solid #00AAE0;
-            border-radius: 10px;
-            width: 150px;
-            display: flex;
-            justify-content: center;
-            padding: 20px 40px; 
-            margin: 18px auto;
-        } .participe a{
-            text-decoration: none;
-            color: #fff;
-            font-size: 21px;
-        } .participe:hover{
-            background-color: #00C2FF;
-            transition: 1s;
-        } .imagem-paq{
-            margin: 0px auto;
-        }
+.section1-imagens{
+    margin: 5% 0;
+}
+.informacoes-section1{
+    font-family: "Bangers", system-ui;
+    color:white;
+    text-align: center;
+    line-height: 50px;
+}
+
+.informacoes-section1 h2{
+    font-size: 38px;
+}
+
+.informacoes-section1 p{
+    font-size: 27px;
+}
+.section1-mudancaDeCor-rosa{
+    color: #FF00F5;
+}
+.section1-mudancaDeCor-azul{
+    color: #00C2FF;
+}
+
+.localizacao-evento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.participe{
+    border: 2px solid #FF00F5;
+    background-color: rgba(255, 0, 255, 0.1);
+    border-radius: 10px;
+    width: 9.5em;
+    display: flex;
+    justify-content: center;
+    padding: 20px 40px; 
+    margin: 18px auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 15%;
+    
+} .participe a{
+    text-decoration: none;
+    color: #fff;
+} .participe:hover{
+    background-color: #FF00F5;
+    transition: 1.3s;
+}
+
+@media screen and (max-width: 768px) {
+    .header{
+        display: none;
+    }
+    .PAQconGrafitada{
+        width: 250px;
+    }
+    .participe{
+        width: 7em;
+        height: 35%;
+        padding: 10px 30px;
+    }
+    .section1-imagens{
+        margin: 15% 0 ;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .PAQconGrafitada{
+        width: 200px;
+    }
 }

@@ -1,17 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 footer{
-    min-height: 60vh;
+    min-height: 10vh;
     font-family: "Poppins", sans-serif;
     background-color: #1A48A5;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    
 }
 
+.section-6{
+    min-height: 50vh;
+    background-color: #1A48A5;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
 .rodape-texto{
+    margin-top: 10%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     max-width: 35%;
     
@@ -20,6 +33,7 @@ footer{
 .rodape-texto h2,p{
     margin-bottom: 3rem;
     justify-content: center;
+    text-align: center;
 }
 .rodape-texto h2{
     font-size: 45px;
@@ -35,13 +49,44 @@ footer{
 .rodape-texto button{
     display: flex;
     justify-content: center;
+    align-items: center;
     border: 2px solid #F03798;
     font-size: 20px;
     font-weight: bold;
     border-radius: 10px;
     width: 14.5em;
-    height: 3.5em;
+    height: 3em;
     background-color: #F03798;
     padding: 2rex;
     color: #FFFF;
+}
+
+.rodape-icones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Para centralizar verticalmente */
+    margin-top: 10%;
+    margin-bottom: 4%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.rodape-links a{
+    margin-left: 10px;
+}
+
+@media screen and (max-width:768px){
+    .rodape-icones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item{
+        margin-top: 6%;
+        justify-content: center;
+    }
+    .rodape-links a{
+        margin-left: 15px;
+    }
 }

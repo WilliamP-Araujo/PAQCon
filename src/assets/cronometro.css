@@ -28,6 +28,7 @@
 
 .timer {
     display: flex;
+    flex-wrap: wrap;
     font-family: "Bakbak One", sans-serif;
     list-style-type: none;
     padding: 5%;
@@ -75,10 +76,26 @@
 
 }
 
+.link-agenda{
+    text-decoration: none;
+    color: white;
+}
 @media screen and (max-width:768px){
+
     .timer{
-        display: flex;
-        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .time{
+        font-size: 50px
+    }
+    .bloco-cronometro{
+        width: 4em;
+        height: 4em;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
     }
     
 }

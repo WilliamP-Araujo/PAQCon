@@ -34,7 +34,8 @@
 }
 .cartao{
     width: calc((100% - 120px) / 5); /* Ajuste a largura dos cartões */
-    max-width: none; /* Remova o limite máximo de largura */
+    max-width: 350px;
+    max-height: 460px; /* Remova o limite máximo de largura */
     flex: 0 0 auto; /* Evite que os cartões encolham */
     border-radius: 25px;
     background-image: url('Rafael_pedro.png');
